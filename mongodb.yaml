@@ -3,6 +3,6 @@ hosts: mongodb
 Become: yes
 Tasks: 
   -name: install mongodb
-   ansible.builtin.yum:
-   name: mongodn
-   state: installed
+   ansible.builtin.command: yum install mongodb-org -y
+   #name: mongod
+   #state: installed
