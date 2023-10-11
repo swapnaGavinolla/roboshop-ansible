@@ -9,7 +9,4 @@ Tasks:
 
   #
 
-  -name: install mongodb
-   ansible.builtin.yum:
-    name: mongod-org
-    state: installed
+  #
