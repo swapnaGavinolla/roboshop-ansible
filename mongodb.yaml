@@ -1,7 +1,7 @@
 - name: installing mongodb component
   hosts: mongodb
   become: yes
-  T tasks: 
+  tasks: 
 
     -name: print
     ansible.builtin.debug:
