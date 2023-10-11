@@ -1,0 +1,8 @@
+Name: installing mongodb component
+hosts: mongodb
+Become: yes
+Tasks: 
+  -name: install mongodb
+   ansible.builtin.yum:
+   name: mongodn
+   state: installed
