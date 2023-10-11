@@ -4,15 +4,15 @@
   tasks: 
 
     -name: print
-    ansible.builtin.debug:
-      msg: "hellloooo"
+     ansible.builtin.debug:
+        msg: "hellloooo"
       
     -name: copying repo file
-    ansible.builtin.copy:
-      src: mongodb.repo
-      dest: /etc/yum.repos.d/mongo.repo
+     ansible.builtin.copy:
+        src: mongodb.repo
+        dest: /etc/yum.repos.d/mongo.repo
 
     -name: install mongodb
-    ansible.builtin.yum:
-      name: mongod-org
-      state: installed
+     ansible.builtin.yum:
+        name: mongod-org
+        state: installed
