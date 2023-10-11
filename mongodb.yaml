@@ -2,6 +2,11 @@ Name: installing mongodb component
 hosts: mongodb
 Become: yes
 Tasks: 
+
+  -name: print
+  ansible.builtin.debug:
+    msg: "hellloooo"
+     
   -name: copying repo file
    ansible.builtin.copy:
     src: mongodb.repo
